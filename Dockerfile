@@ -6,4 +6,5 @@ VOLUME /var/lib/samba
 
 EXPOSE 139 445
 
-CMD ["smbd", "-SF"]
+ADD docker-entrypoint.sh /
+ENTRYPOINT /docker-entrypoint.sh
