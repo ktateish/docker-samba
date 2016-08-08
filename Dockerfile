@@ -1,7 +1,6 @@
 FROM alpine
 
-RUN apk update
-RUN apk add samba
+RUN apk add --no-cache samba
 
 VOLUME /etc/samba
 VOLUME /var/lib/samba
